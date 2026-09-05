@@ -1,0 +1,14 @@
+# AI Software Engineering Capstone Projects
+
+**Overview**
+This repository documents a progressive sequence of AI engineering capstones, evolving from foundational LLM integrations to a fully monitored, multi-agent web service. The overarching focus is on building reliable, deterministic AI systems that move beyond naive, open-ended chat interfaces. By applying rigorous software engineering principles—measurable retrieval, structured outputs, conditional routing, and CI/CD pipelines—these projects culminate in robust, real-world applications leveraging modern full-stack environments like Next.js, React, and Python.
+
+**The Development Journey**
+Rather than isolated scripts, these systems are designed to chain together: foundational retrieval tools become nodes in multi-agent networks, which are then exposed as standardized protocols and consumed by automated coding workflows.
+
+* **Grounded LLM Interfaces:** Building single-purpose assistants that enforce strict, machine-readable outputs (via Pydantic or Zod). This eliminates hallucination by grounding the AI in mock databases (orders, policies) and integrating it directly into interactive UI components.
+* **Measurable Retrieval (RAG):** Engineering a document knowledge base where retrieval quality is quantified mathematically. This replaces standard semantic search with hybrid pipelines (dense vectors + BM25) and cross-encoder reranking to guarantee the LLM receives the exact required context.
+* **Multi-Agent Orchestration:** Designing stateful, multi-actor systems using LangGraph. This involves routing specific tasks between specialized agents (supervisors, researchers, critics) with human-in-the-loop checkpoints to autonomously synthesize cited research reports.
+* **Model Context Protocol (MCP) Services:** Wrapping tools and data into standardized MCP servers. These are served via asynchronous streaming endpoints and consumed by responsive frontend clients, establishing a secure and scalable host/client/server architecture.
+* **Agentic Full-Stack Development:** Utilizing AI coding assistants to build a complete, spec-driven application. This emphasizes test-driven development (TDD), strict PRD adherence, and human code-review loops to catch hallucinated APIs while rapidly shipping modular features.
+* **Production Deployment:** Hardening a selected project for live cloud deployment. This final phase involves containerization (Docker), automated CI/CD pipelines (GitHub Actions), online evaluation (RAGAS), and comprehensive observability (tracing, logging, cost monitoring) to deliver a portfolio-ready product.
