@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    @apply bg-surface text-zinc-200 font-sans;
+  }
+  ::selection {
+    @apply bg-zinc-700 text-white;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-3xl border border-zinc-800/80 bg-zinc-900/60 shadow-glow backdrop-blur-sm;
+  }
+  .section-title {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500;
+  }
+  .divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-zinc-700/70 to-transparent;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-zinc-800 bg-zinc-900/80 px-3 py-1.5 text-xs font-medium text-zinc-300 transition-colors hover:border-zinc-600 hover:text-white;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500;
+  }
+  .btn-primary {
+    @apply btn bg-zinc-100 text-zinc-900 hover:bg-white hover:shadow-[0_0_24px_rgba(255,255,255,0.15)];
+  }
+  .btn-ghost {
+    @apply btn border border-zinc-800 bg-zinc-900/60 text-zinc-200 hover:border-zinc-600 hover:bg-zinc-800/80;
+  }
+}
+
+/* Thin scrollbars for chat panel */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
