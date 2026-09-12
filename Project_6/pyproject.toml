@@ -1,0 +1,17 @@
+[project]
+name = "mcp-chat-app"
+version = "0.2.0"
+description = "Streamlit + FastAPI + MCP chat app (OpenWeather + Airbnb)"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=2",
+    "fastapi",
+    "uvicorn",
+    "streamlit",
+    "openai",
+    "requests",
+    "python-dotenv",
+    "pydantic",
+    "fastmcp>=4.0.3",
+    "pyautogui>=0.9.54",
+]
